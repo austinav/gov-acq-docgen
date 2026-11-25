@@ -1,0 +1,54 @@
+# A concern-driven document: everything tagged "cybersecurity", regardless of
+# where it lives in the SDD/IDD. Typical RMF package attachment.
+document:
+  id: CDS
+  title: Cybersecurity Design Summary
+  subject: "for the {{csci.name}} ({{csci.id}})"
+  doc_number: HW-TFD-CDS
+  data_item: Contractor format
+  sdrl: SDRL A021
+  revision: A
+  cite: [DODI-8510, NIST-800-53]
+  release_statuses: [approved, draft]    # internal working document: drafts allowed
+  report_unaddressed: false
+
+sections:
+  - title: Introduction
+    sections:
+      - title: System overview
+        blocks: [{unit: scope.system-overview, variant: summary}]
+      - title: Purpose
+        blocks:
+          - text: >-
+              This summary collects every design element of the {{csci.abbrev}} CSCI that implements a
+              cybersecurity control, to support the Risk Management Framework (RMF) assessment.
+              All text is drawn from the same controlled content used in the SDD and IDD.
+
+  - title: Referenced documents
+    blocks: [{generate: references}]
+
+  - title: Security architecture and mechanisms
+    blocks:
+      - query: {concerns: cybersecurity, type: [design-decision, security-design]}
+        as: subsections
+
+  - title: Security-relevant components
+    blocks:
+      - query: {concerns: cybersecurity, type: component}
+        variant: summary
+        as: subsections
+
+  - title: Security-relevant interfaces
+    blocks:
+      - query: {concerns: cybersecurity, type: interface}
+        as: subsections
+
+  - title: Control implementation matrix
+    blocks: [{generate: control_matrix}]
+
+  - title: Notes
+    sections:
+      - title: Acronyms
+        blocks: [{generate: acronyms}]
+      - title: Content provenance
+        blocks: [{generate: provenance}]

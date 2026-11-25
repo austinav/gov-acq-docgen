@@ -1,0 +1,51 @@
+# Interface Design Description, structured per DI-IPSC-81436A.
+document:
+  id: IDD
+  title: Interface Design Description
+  subject: "for the {{csci.name}} ({{csci.id}})"
+  doc_number: HW-TFD-IDD
+  data_item: DI-IPSC-81436A
+  sdrl: SDRL A013
+  revision: B
+  cite: [DI-IPSC-81436A, HW-TFD-SRS]
+  release_statuses: [approved]
+  report_unaddressed: false
+
+sections:
+  - title: Scope
+    sections:
+      - title: Identification
+        blocks: [{unit: scope.identification}]
+      - title: System overview
+        blocks: [{unit: scope.system-overview, variant: summary}]
+      - title: Document overview
+        blocks:
+          - text: >-
+              This Interface Design Description (IDD) describes the external interfaces of the
+              {{csci.abbrev}} CSCI. It is delivered as {{doc.sdrl}} under contract {{contract.number}}.
+
+  - title: Referenced documents
+    blocks: [{generate: references}]
+
+  - title: Interface design
+    sections:
+      - title: Interface identification and diagrams
+        blocks:
+          - unit: if.overview
+          - generate: element_table
+            kind: interface
+    # One subsection per external interface, full detail (3.2, 3.3, ...)
+    blocks:
+      - query: {type: interface, elements: [IF-RAD-01, IF-AIS-02, IF-C2-03, IF-TIME-04]}
+        as: subsections
+        after_children: true
+
+  - title: Requirements traceability
+    blocks: [{generate: traceability}]
+
+  - title: Notes
+    sections:
+      - title: Acronyms
+        blocks: [{generate: acronyms}]
+      - title: Content provenance
+        blocks: [{generate: provenance}]

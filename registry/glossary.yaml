@@ -1,0 +1,33 @@
+# Acronyms are auto-included in a document's Notes section only when they
+# appear in that document's assembled text.
+AIS: Automatic Identification System
+ASTERIX: All Purpose Structured EUROCONTROL Surveillance Information Exchange
+C2: Command and Control
+CAC: Common Access Card
+COP: Common Operational Picture
+CoT: Cursor-on-Target
+CSC: Computer Software Component
+CSCI: Computer Software Configuration Item
+DID: Data Item Description
+FIPS: Federal Information Processing Standard
+HMI: Human-Machine Interface
+HSM: Hardware Security Module
+IDD: Interface Design Description
+IMM: Interacting Multiple Model
+ISSO: Information System Security Officer
+MMSI: Maritime Mobile Service Identity
+NMEA: National Marine Electronics Association
+PKI: Public Key Infrastructure
+PTP: Precision Time Protocol
+RBAC: Role-Based Access Control
+RMF: Risk Management Framework
+SBOM: Software Bill of Materials
+SDD: Software Design Description
+SDRL: Supplier Data Requirements List
+SIEM: Security Information and Event Management
+SRG: Security Requirements Guide
+SRS: Software Requirements Specification
+STIG: Security Technical Implementation Guide
+TLS: Transport Layer Security
+UDP: User Datagram Protocol
+UTC: Coordinated Universal Time

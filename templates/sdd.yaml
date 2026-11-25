@@ -1,0 +1,71 @@
+# Software Design Description, structured per DI-IPSC-81435A.
+document:
+  id: SDD
+  title: Software Design Description
+  subject: "for the {{csci.name}} ({{csci.id}})"
+  doc_number: HW-TFD-SDD
+  data_item: DI-IPSC-81435A
+  sdrl: SDRL A012
+  revision: C
+  cite: [DI-IPSC-81435A, HW-TFD-SRS]     # always listed in Section 2
+  release_statuses: [approved]           # draft units are excluded from this deliverable
+
+sections:
+  - title: Scope
+    sections:
+      - title: Identification
+        blocks: [{unit: scope.identification}]
+      - title: System overview
+        blocks: [{unit: scope.system-overview}]
+      - title: Document overview
+        blocks:
+          - text: >-
+              This Software Design Description (SDD) describes the design of the {{csci.abbrev}} CSCI:
+              its CSCI-wide design decisions, its architectural design, and the detailed design of each
+              Computer Software Component (CSC). It is delivered as {{doc.sdrl}} under contract {{contract.number}}.
+
+  - title: Referenced documents
+    blocks: [{generate: references}]
+
+  - title: CSCI-wide design decisions
+    blocks:
+      - text: This section presents CSCI-wide design decisions, including security design decisions.
+      - query: {type: [design-decision, security-design]}
+        as: subsections
+
+  - title: CSCI architectural design
+    sections:
+      - title: CSCI components
+        blocks:
+          - text: "The {{csci.abbrev}} CSCI consists of the following Computer Software Components (CSCs):"
+          - generate: element_table
+            kind: component
+          - query: {type: component}
+            variant: summary
+            as: subsections
+      - title: Concept of execution
+        blocks: [{unit: exec.concept}]
+      - title: Interface design
+        blocks:
+          - unit: if.overview
+          - generate: element_table
+            kind: interface
+          - text: Detailed interface definitions are provided in the Interface Design Description.
+          - query: {type: interface, elements: [IF-RAD-01, IF-AIS-02, IF-C2-03, IF-TIME-04]}
+            variant: summary
+            as: subsections
+
+  - title: CSCI detailed design
+    blocks:
+      - query: {type: component}
+        as: subsections
+
+  - title: Requirements traceability
+    blocks: [{generate: traceability}]
+
+  - title: Notes
+    sections:
+      - title: Acronyms
+        blocks: [{generate: acronyms}]
+      - title: Content provenance
+        blocks: [{generate: provenance}]

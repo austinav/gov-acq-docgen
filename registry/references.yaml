@@ -1,0 +1,17 @@
+# Reference catalog. Units cite these by key; Section 2 of each document is
+# generated from the references actually cited by the content it contains.
+DI-IPSC-81435A: {number: DI-IPSC-81435A, title: Software Design Description (SDD) Data Item Description}
+DI-IPSC-81436A: {number: DI-IPSC-81436A, title: Interface Design Description (IDD) Data Item Description}
+HW-TFD-SRS: {number: HW-TFD-SRS Rev B, title: Software Requirements Specification for the Track Fusion and Display CSCI}
+HW-CSS-SSDD: {number: HW-CSS-SSDD Rev A, title: System/Subsystem Design Description for the HARBORWATCH Coastal Surveillance System}
+NIST-800-53: {number: NIST SP 800-53 Rev. 5, title: Security and Privacy Controls for Information Systems and Organizations}
+NIST-800-207: {number: NIST SP 800-207, title: Zero Trust Architecture}
+DODI-8510: {number: DoDI 8510.01, title: Risk Management Framework for DoD Systems}
+FIPS-140-3: {number: FIPS PUB 140-3, title: Security Requirements for Cryptographic Modules}
+RFC-8446: {number: IETF RFC 8446, title: The Transport Layer Security (TLS) Protocol Version 1.3}
+ASTERIX-048: {number: EUROCONTROL-SPEC-0149-4, title: "ASTERIX Part 4: Category 048 Monoradar Target Reports"}
+NMEA-0183: {number: NMEA 0183 v4.11, title: Standard for Interfacing Marine Electronic Devices}
+ITU-M1371: {number: ITU-R M.1371-5, title: Technical Characteristics for an Automatic Identification System}
+IEEE-1588: {number: IEEE 1588-2019, title: Precision Clock Synchronization Protocol for Networked Measurement and Control Systems}
+COT-SCHEMA: {number: HW-CSS-ICD-003, title: Cursor-on-Target Track Message Schema (program tailoring)}
+CONTAINER-SRG: {number: DISA Container Platform SRG, title: Container Platform Security Requirements Guide}

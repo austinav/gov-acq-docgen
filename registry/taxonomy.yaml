@@ -1,0 +1,31 @@
+# Controlled vocabularies. Every tag on a content unit must exist here
+# (enforced by `build.py validate`).
+
+content_types:
+  scope: Identification / overview text
+  design-decision: CSCI-wide design decision
+  security-design: Security mechanism design
+  component: Software component (CSC) description
+  interface: Interface description
+  execution: Concept of execution / dynamic behavior
+
+concerns:
+  architecture: Structural organization of the software
+  cybersecurity: Confidentiality, integrity, availability, RMF compliance
+  interfaces: Data exchange with external systems
+  performance: Timing, throughput, capacity
+  availability: Fault tolerance, failover, recovery
+  data-management: Persistence, retention, data integrity
+  maintainability: Modifiability, extensibility, supportability
+
+elements:
+  HW-TFD-CSCI: {name: Track Fusion and Display CSCI, kind: csci}
+  SIS: {name: Sensor Ingest Service, kind: component, purpose: "Receives, validates, and normalizes radar and AIS sensor data"}
+  TCE: {name: Track Correlation Engine, kind: component, purpose: "Associates observations and maintains the fused track picture"}
+  ODS: {name: Operator Display Subsystem, kind: component, purpose: "Presents the common operational picture to watchstanders"}
+  ARC: {name: Track Archive Service, kind: component, purpose: "Persists track history and supports replay"}
+  SEC: {name: Security Services, kind: component, purpose: "Provides identity, authorization, audit, and certificate management"}
+  IF-RAD-01: {name: Radar Sensor Interface, kind: interface, peer: Surface search radar processors, direction: Inbound}
+  IF-AIS-02: {name: AIS Receiver Interface, kind: interface, peer: AIS base station, direction: Inbound}
+  IF-C2-03: {name: External C2 Track Interface, kind: interface, peer: Regional C2 system, direction: Outbound}
+  IF-TIME-04: {name: Time Reference Interface, kind: interface, peer: GPS-disciplined PTP grandmaster, direction: Inbound}

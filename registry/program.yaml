@@ -1,0 +1,20 @@
+# Program-level variables. Content units reference these as {{path.to.value}}
+# so the same text can be reused across programs, CSCIs, and deliveries.
+program:
+  name: HARBORWATCH
+system:
+  name: HARBORWATCH Coastal Surveillance System
+  abbrev: HW-CSS
+csci:
+  name: Track Fusion and Display CSCI
+  abbrev: TFD
+  id: HW-TFD-CSCI
+  version: "2.1"
+contract:
+  number: N00000-26-C-0000 (EXAMPLE)
+  contractor: Example Systems Integration, Inc.
+  acquirer: the HARBORWATCH Program Office
+classification: UNCLASSIFIED
+distribution: >-
+  DISTRIBUTION STATEMENT A. Approved for public release; distribution is unlimited.
+  This is an example document describing a fictional system.

@@ -1,0 +1,17 @@
+# Extract of the (fictional) Software Requirements Specification.
+TFD-SRS-0100: The TFD CSCI shall achieve an operational availability of not less than 0.999.
+TFD-SRS-0110: The TFD CSCI shall support the addition of new sensor types without modification of correlation logic.
+TFD-SRS-0200: The TFD CSCI shall ingest radar target reports formatted per ASTERIX Category 048.
+TFD-SRS-0210: The TFD CSCI shall ingest AIS messages formatted per NMEA 0183.
+TFD-SRS-0220: The TFD CSCI shall reject malformed sensor messages and record each rejection.
+TFD-SRS-0300: The TFD CSCI shall correlate radar and AIS observations into a single track picture of not less than 2,000 simultaneous tracks.
+TFD-SRS-0310: The TFD CSCI shall display track updates within 1.0 second (95th percentile) of sensor data receipt.
+TFD-SRS-0320: The TFD CSCI shall export the track picture to the external C2 system at a rate of 1 Hz.
+TFD-SRS-0350: The TFD CSCI shall present the common operational picture with role-based views.
+TFD-SRS-0360: The TFD CSCI shall retain track history for not less than 90 days.
+TFD-SRS-0400: The TFD CSCI shall authenticate all users with DoD PKI credentials.
+TFD-SRS-0410: The TFD CSCI shall mutually authenticate and encrypt all inter-service communications.
+TFD-SRS-0420: The TFD CSCI shall protect data in transit to external systems using FIPS 140-3 validated cryptography.
+TFD-SRS-0430: The TFD CSCI shall generate audit records for security-relevant events.
+TFD-SRS-0440: The TFD CSCI shall be configured in accordance with applicable STIGs and SRGs.
+TFD-SRS-0500: The TFD CSCI shall time-stamp all observations to UTC with an accuracy of 1 millisecond or better.
